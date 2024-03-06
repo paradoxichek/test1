@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Медиа-запросы для различных разрешений экрана */
 @media (max-width: 1200px) {
   .container {
@@ -29,7 +30,6 @@
     line-height: 58px;
     letter-spacing: 3.2px;
   }
-
   .nigga {
     border-radius: 12px;
     background: url(./img/nigga.png), lightgray 50%;
@@ -39,7 +39,6 @@
     height: 673px;
     flex-shrink: 0;
   }
-
   .episode_text h3 {
     color: #fff;
     font-family: DM Sans;
@@ -49,7 +48,6 @@
     line-height: 50.4px;
     letter-spacing: 2.56px;
   }
-
   .episode_number {
     color: #118da8;
     font-family: DM Sans;
@@ -70,8 +68,8 @@
     padding: 30px;
     margin-bottom: 60px;
   }
-
   .subs_flex {
+    max-width: -moz-fit-content;
     max-width: fit-content;
     margin: 0 20px;
     padding: 0 30px;
@@ -84,7 +82,6 @@
     align-items: top;
     gap: 100px;
   }
-
   .center .text p {
     color: rgba(255, 255, 255, 0.7);
     font-family: DM Sans;
@@ -94,7 +91,6 @@
     line-height: 25px;
     padding-bottom: 33px;
   }
-
   .email h6 {
     color: #fff;
     font-family: DM Sans;
@@ -105,7 +101,6 @@
     letter-spacing: 2.88px;
   }
 }
-
 @media (max-width: 992px) {
   .container {
     max-width: 768px; /* Изменяем максимальную ширину для ещё меньших экранов */
@@ -114,7 +109,6 @@
     display: flex;
     gap: 20px;
   }
-
   .text {
     color: #fff;
     font-family: DM Sans;
@@ -134,14 +128,13 @@
     line-height: 38px;
     letter-spacing: 3.2px;
   }
-
   h2 {
     font-size: 45px;
   }
-
   .nigga {
     border-radius: 12px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     background: url(./img/nigga.png), lightgray 50%;
     background-position: center;
     background-size: cover;
@@ -149,12 +142,12 @@
     height: 633px;
     flex-shrink: 0;
   }
-
   .main {
     padding: 0 50px;
   }
   .pictures img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 100%;
     width: 300px;
   }
@@ -167,7 +160,6 @@
     line-height: 38.4px;
     letter-spacing: 2.56px;
   }
-
   .center .text p {
     color: rgba(255, 255, 255, 0.7);
     font-family: DM Sans;
@@ -229,7 +221,9 @@
     padding: 0 25px;
     padding-bottom: 20px;
     margin: -20px;
+    height: -moz-fit-content;
     height: fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     min-width: 100px;
   }
@@ -242,296 +236,288 @@
     line-height: 50px;
     letter-spacing: 2.88px;
   }
-
   .name input {
     width: 430px;
     height: 75px;
     margin-bottom: 10px;
   }
 }
-
-
 @media (max-width: 768px) {
   .container {
     max-width: 758px;
     margin: 0 auto;
     padding-right: 20px;
   }
-
   .subs_flex {
     gap: 10px;
     padding: 0 25px;
     padding-bottom: 20px;
     margin: -20px;
+    height: -moz-fit-content;
     height: fit-content;
-
+    width: -moz-fit-content;
     width: fit-content;
   }
-.subs{
-  padding: 0;  
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-.adapnone{
-  display: none;
-}
-header {
-  height: 119px;
-  display: flex;
-justify-content: center;
-gap: 50%;
-  padding: 0;
-  align-items: center;
-}
-.pictures img{
-  width: 200;
-}
-
-.episode_text p{
-  padding-bottom:38px;
-  padding-top: 15px;
-  font-size: 16px;
-  line-height: 20px;
-}
-.episode_text h3{
-  font-size: 20px;
-  line-height: 22px;
-}
-.episode_microphones_item_item{
-  height: 380px;
-  padding-bottom: 0;
-}
-.fzz p{
-  font-size: 13px;
-}
-
-.episode_number {
-  padding-bottom: 4px;
-  padding-top: 4px;
-}
-.pictures {
-  padding-right: 45px;
-}
-.pictures img {
-  object-fit: cover;
-  height: 90%;
-  width: 209px;
-}
-.episode_number {
-  padding-bottom: 4px;
-  padding-top: 4px;
-}
-.main{
-  flex-direction: column;
-}
-
-.text{
-  padding-top: 20px;
-  line-height: 42px;
-  display: flex;
-  justify-content: center;
-  font-size: 40px;
-  span{
+  .subs {
+    padding: 0;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .adapnone {
+    display: none;
+  }
+  header {
+    height: 119px;
+    display: flex;
+    justify-content: center;
+    gap: 50%;
+    padding: 0;
+    align-items: center;
+  }
+  .pictures img {
+    width: 200;
+  }
+  .episode_text p {
+    padding-bottom: 38px;
+    padding-top: 15px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .episode_text h3 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .episode_microphones_item_item {
+    height: 380px;
+    padding-bottom: 0;
+  }
+  .fzz p {
+    font-size: 13px;
+  }
+  .episode_number {
+    padding-bottom: 4px;
+    padding-top: 4px;
+  }
+  .pictures {
+    padding-right: 45px;
+  }
+  .pictures img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 90%;
+    width: 209px;
+  }
+  .episode_number {
+    padding-bottom: 4px;
+    padding-top: 4px;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .text {
+    padding-top: 20px;
+    line-height: 42px;
+    display: flex;
+    justify-content: center;
     font-size: 40px;
   }
-}
-.epidosde_latest h2{
-  font-size: 27px;
-}
-.btn button{
-  width: 160px;
-}
-.center{
-  flex-direction: column;
-}
-
-.text {
+  .text span {
+    font-size: 40px;
+  }
+  .epidosde_latest h2 {
+    font-size: 27px;
+  }
+  .btn button {
+    width: 160px;
+  }
+  .center {
+    flex-direction: column;
+  }
+  .text {
     padding-top: 20px;
     line-height: 42px;
     font-size: 40px;
-display: block;
-}
-.arrowblue{
- width: 90px;
- height: 90px;
- rotate: 90deg; 
-}
-.niggase2{
-  width: 375px;
+    display: block;
+  }
+  .arrowblue {
+    width: 90px;
+    height: 90px;
+    rotate: 90deg;
+  }
+  .niggase2 {
+    width: 375px;
     height: 633px;
+  }
+  .center .text p {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: DM Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    padding-bottom: 15px;
+  }
+  .center h5 {
+    color: #fff;
+    font-family: DM Sans;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 2.88px;
+    padding-bottom: 28px;
+  }
+  .starsitem p {
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 39.2px;
+    padding-bottom: 19px;
+  }
+  .subs_flex {
+    flex-direction: column;
+  }
+  .name {
+    padding-top: 11px;
+  }
 }
-.center .text p {
-  color: rgba(255, 255, 255, 0.7);
-  font-family: DM Sans;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  padding-bottom: 15px;
-}
-.center h5 {
-  color: #fff;
-  font-family: DM Sans;
-  font-size: 55px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 60px;
-  letter-spacing: 2.88px;
-  padding-bottom: 28px;
-}
-.starsitem p {
-  color: #FFF;
-  font-family: DM Sans;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 39.2px;
-  padding-bottom: 19px;
-}
-.subs_flex{
-  flex-direction: column;
-}
-
-.name {
-  padding-top: 11px;
-}
-
-}
-@media(max-width: 646px){
-  .container{
+@media (max-width: 646px) {
+  .container {
     width: 480;
   }
-  .episode_text p{
-  padding-bottom:18px;
-  padding-top: 15px;
-  font-size: 12px;
-  line-height: 16px;
+  .episode_text p {
+    padding-bottom: 18px;
+    padding-top: 15px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .episode_text h3 {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .episode_microphones_item_item {
+    height: 380px;
+    padding-bottom: 0;
+  }
 }
-.episode_text h3{
-  font-size: 15px;
-  line-height: 17px;
-}
-.episode_microphones_item_item{
-  height: 380px;
-  padding-bottom: 0;
-}
-
-
-}
-@media(max-width: 528px){
+@media (max-width: 528px) {
   .pictures {
     padding-right: 0px;
-}
-.episode_microphones_item_item {
-  height: 287px;
-  padding-bottom: 0;
-  flex-direction: column;
-  height: fit-content ;
-  padding-bottom: 20px;
-}
-
-.pictures img {
-  padding-bottom: 20px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  height:250px;
-  width: 100%;
-}
-
-.btn button {
-  border-radius: 6px;
-  border: none;
-  background: #118DA8;
-  width: 178px;
-  height: 39px;
-  flex-shrink: 0;
-  color: #FFF;
-  font-family: DM Sans;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 27px;
-}
-
-.episode_text p{
-  font-size: 13px;
-  padding-bottom: 13px;
-  padding-top: 10px;
-}
-.starsgrid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 10px;
-}
-.starsitem p {
-  color: #FFF;
-  font-family: DM Sans;
-  font-size: 37px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 37.2px;
-  padding-bottom: 19px;
-}
-.footer {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-}
-.footer_item{
-  padding-bottom: 20px;
-}
-.episode_number{
-gap: 70%;
-}
-
-.adapnone2{
-  display: none;
-}
-.hamburger{
-  display: block !important;
-  font-size: 35px;
-}
-}
-@media(max-width: 480px) 
-{
-.container{
-    width: 420px;
-}
-.hamburger{
-  display: block !important;
-  font-size: 35px;
-}
-.episode_microphones_item_item{
-  max-width: 400px;
-}
-.episode_number{
-  gap: 60%;
   }
-  .name input{
-    width: 350px;
+  .episode_microphones_item_item {
+    height: 287px;
+    padding-bottom: 0;
+    flex-direction: column;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 20px;
   }
-  .episode_microphones_item_item{
+  .pictures img {
+    padding-bottom: 20px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+  }
+  .btn button {
+    border-radius: 6px;
+    border: none;
+    background: #118DA8;
+    width: 178px;
+    height: 39px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+  }
+  .episode_text p {
+    font-size: 13px;
+    padding-bottom: 13px;
+    padding-top: 10px;
+  }
+  .starsgrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .starsitem p {
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 37.2px;
+    padding-bottom: 19px;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer_item {
+    padding-bottom: 36px;
+  }
+  .episode_number {
+    gap: 70%;
+  }
+  .adapnone2 {
+    display: none;
+  }
+  .hamburger {
+    display: block !important;
+    font-size: 35px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    max-width: 420px;
+  }
+  .hamburger {
+    display: block !important;
+    font-size: 35px;
+  }
+  .episode_microphones_item_item {
+    max-width: 400px;
+  }
+  .starsitem p {
+    font-size: 30px;
+  }
+  .episode_number {
+    gap: 60%;
+  }
+  .name input {
+    width: 250px;
+  }
+  .episode_microphones_item_item {
     max-width: 420px;
   }
   .starsitem {
     padding: 38px;
-    width: 90%;
+    width: 100%;
+  }
+  .epidosde_latest {
+    justify-content: center;
+    gap: 10%;
+  }
+  .nigga_svg img {
+    display: none;
+  }
 }
-.epidosde_latest{
-  justify-content: center;
-  gap: 10%;
-}
-}
+@media (max-width: 300px) {
+  .container {
+    width: 260px;
 
-@media(max-width: 300px) 
-{
-.container{
-    width: 280px;
-    padding: 0;
     margin: 0 auto;
-}
-
-
-
-}
-
+  }
+  .nigga{
+    width: 250px;
+  }
+  .starsitem p {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}/*# sourceMappingURL=media.css.map */

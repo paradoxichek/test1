@@ -55,7 +55,7 @@ gap: 40px;
 
 
     border-radius: 12px;
-    background: url(./img/nigga.png), lightgray 50% ;
+    background: url(../img/nigga.png), lightgray 50% ;
     background-position: center;
     background-size: cover;
     width: 450px;
@@ -318,7 +318,7 @@ font-weight: 400;
 }
 
 .niggase2 {
-background-image: url(./img/niggase2.png);
+background-image: url(../img/niggase2.png);
 background-size: cover;
 
 width: 780px;
@@ -469,3 +469,130 @@ text-decoration: none;
     grid-template-columns: repeat(4, 1fr);
    
 }
+
+.bg_modal{
+   display: none;
+    z-index: 10;
+    width: 100%;
+    position: absolute;
+    height: 1000vh;
+    background-color: #050000c7;
+}
+
+.modal{
+    position: relative;
+    padding:   40px    ;
+    border-radius: 10px;
+    width: 600px;
+    height: fit-content;
+    z-index: 144;
+    position: absolute;
+    background: #3b3b3b;
+    top: -500%;
+    transition: 0.6s;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.close {
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+.modal_content h1 {
+    font-family: DM Sans;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+}
+.modal_content p{
+    font-family: DM Sans;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+}
+
+.modal_content .hr {
+    margin-bottom: 20px;
+    display: flex;
+ 
+    background-color: rgb(72, 71, 71) !important;
+    width: 100%;
+    height: 2px;
+}
+.accordion {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .accordion-item {
+    border-radius: 10px;
+    padding-bottom: 10px;
+
+  }
+
+  .accordion-item:last-child {
+    border-bottom: none;
+  }
+
+  .accordion-header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 30px;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(13, 12, 12);
+    
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+
+  .accordion-content {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition:  1s ease;
+  }
+
+  .accordion-item.active .accordion-content {
+    max-height: 200px; /* Высота контента, которая будет показана */
+  }
+
+  .accordion-text h1{
+    padding-bottom: 30px;
+    padding-top: 20px;
+    text-align: left;
+    font-family: DM Sans;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+
+  }
+
+  .rotate{
+    rotate: 180deg !important;
+    transition: 1s;
+  }
+  .rotate2{
+    rotate: 360deg !important;
+    transition: 1s;
+  }
+
+   .accordion-header span p {
+    transition: 1s;
+    font-size: 30px;
+    color: black;
+  }
